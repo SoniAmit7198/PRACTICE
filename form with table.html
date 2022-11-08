@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <table border="1" cellspacing="5px" cellpadding="5px" >
+            <tr>
+                <td>NAME:</td>
+                <td><input type="text" name="name" required pattern="[a-zA-Z]{3,6}"title="3 to 6 latters......!" placeholder="Enter Your Name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="Email" placeholder="Enter Your Email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="Password" required pattern="[A-Z]{1}[a-z]{2}[0-9]{1}"title="one latter in uppercase,two latters in lowercase and one number"></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td>+91<input type="text" name="Numer" required pattern="[0-9]{10}" title="only 10 numbers"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="Numer">Male
+                    <input type="radio" name="Numer">Female
+                </td>
+             </tr>
+             <tr>
+                <td>Hobby:</td>
+                <td><input type="checkbox" name="hobby">Cricket
+                    <input type="checkbox" name="hobby">Basketball
+                    <input type="checkbox" name="hobby">Football
+                    <input type="checkbox" name="hobby">Vollyball
+                </td>
+             </tr>
+             <tr>
+                <td>Upload Image:</td>
+                <td><input type="file" name="" multiple></td>
+             </tr>
+             <tr>
+                <td>Date:</td>
+                <td><input type="date" name=""></td>
+             </tr>
+             <tr>
+                <td>Quantity:</td>
+                <td><input type="number" name="" max="5" min="1"></td>
+             </tr>
+             <tr>
+                <td>Date time:</td>
+                <td><input type="datetime-local"></td>
+             </tr>
+             <tr rowspan="2" align="center">
+                <td colspan="2"><input type="Submit" name="">
+                <input type="Reset"></td>
+             </tr>
+        </table>
+    </form>
+</body>
+</html>
