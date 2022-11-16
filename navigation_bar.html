@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: green;
+        }
+
+        .nav .main_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav .main_menu .menu {
+            display: inline;
+            background-color: red;
+            font-size: 30px;
+            position: relative;
+            margin-left: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+            /* color: white; */
+
+        }
+
+        .dropdown {
+            position: absolute;
+            top:100%;
+            left: 0;
+            display: none;
+            
+        }
+        .menu:hover .dropdown{
+            display: block;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul class="main_menu">
+            <li class="menu"><a href="">Home</a></li>
+            <li class="menu"><a href="">About</a></li>
+            <li class="menu"><a href="">Services</a>
+                <ul class="dropdown">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                    <li><a href="">Service 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
